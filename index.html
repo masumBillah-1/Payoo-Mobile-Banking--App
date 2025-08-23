@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo Mobile Banking App</title>
-</head>
-<body>
+
+    <!-- daisy ui cdn links  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     
+    <!-- tailwindcss cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-[#F4F5F7] h-[100vh] flex flex-col justify-center items-center">
+
+        <div class="h-[130px] w-[350px] bg-[url(./assets/bg.png)] bg-no-repeat bg-cover flex flex-col justify-center items-center">
+           
+            <img src="assets/Group.png" alt="">
+        </div>
+    <form class="bg-white p-5 rounded-md w-[350px]">
+
+        <div class="">
+            <label class="font-[500]" for="">Mobile Number</label>
+            <br>
+            <input id="input-mobile" type="text" placeholder="Enter your number" class="input mt-2 rounded-3xl" />
+            <br>
+        </div>
+
+        <div class="my-3 ">
+            <label  class="font-[500]" for="">4 Digit Pin</label> 
+            <br>
+            <input id="input-pin" type="text" placeholder="Enter 4 Digit Pin" class="input mt-2 rounded-3xl" /> 
+            <br>
+            
+        </div>
+        <button id="btn-login" class="w-full rounded-3xl btn bg-[#0874F2] text-white flex items-center justify-center">
+  <span id="spinner" class="loading loading-spinner hidden mr-2"></span>
+  Login
+</button>
+
+    </form>
+
+
+    <script src="app.js"></script>
+
 </body>
 </html>
