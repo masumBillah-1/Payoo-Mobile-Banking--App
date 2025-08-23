@@ -13,7 +13,7 @@
     <!-- font-awesome cdn links  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-[#F4F5F7] h-[100vh]">
+<body class="bg-[#F4F5F7]">
 
 
    
@@ -86,20 +86,46 @@
     </div>
 
 
-    <div class="max-w-lg mx-auto">
-        <div>
-            <h2>Add Money</h2>
+    <div class="max-w-lg mx-auto p-5 ">
+        
+        <h2 class="font-bold">Add Money</h2>
+           <form class="bg-white rounded-2xl p-8 flex flex-col gap-5 mt-3">
+            
             <div>
                 <label for="">Select A Bank</label>
                 <br>
-                <input  type="text" placeholder="Enter your number" class="input mt-2 rounded-3xl" />
+                <select class="select rounded-3xl w-full  bg-[#F4F5F7] mt-2">
+                    <option disabled selected>Select Your Bank Name</option>
+                    <option>NRBC Bank</option>
+                    <option>Agrani Bank</option>
+                    <option>Islami Bank</option>
+                    <option>Brack Bank</option>
+                    <option>AL-ARFA BaNK</option>
+                </select>
             </div>
             <div>
-                <label for="">Select A Bank</label>
+                <label for="">Bank Account Number</label>
                 <br>
-                <input type="text" placeholder="Enter your number" class="input mt-2 rounded-3xl" />
+                <input type="text" placeholder="Enter 11 digit account number" class="input mt-2 rounded-3xl w-full  bg-[#F4F5F7]" />
             </div>
-        </div>
+            <div>
+                <label for="">Amount to Add</label>
+                <br>
+                <input type="text" placeholder="Add Amount to withdraw" class="input mt-2 rounded-3xl w-full  bg-[#F4F5F7]" />
+            </div>
+            <div>
+                <label for="">Pin Number</label>
+                <br>
+                <input type="text" placeholder="Enter 4 digit pin number" class="input mt-2 rounded-3xl w-full bg-[#F4F5F7]" />
+            </div>
+
+                <button id="btn-login" class="w-full rounded-3xl btn py-6 bg-[#0874F2] text-white flex items-center justify-center">
+                <span id="spinner" class="loading loading-spinner hidden mr-2"></span>
+                Login
+                </button>
+            
+           </form>
+        
     </div>
     
     
