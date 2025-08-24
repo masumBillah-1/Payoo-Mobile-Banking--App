@@ -23,7 +23,7 @@
             <div class="flex justify-center items-center ">
                 <img src="assets/Group.png" alt="" class="h-[40px] ml-2">
                 <div class="ml-3">   
-                    <h3 class="text-[20px] font-bold">$ <span>45000</span></h3>
+                    <h3 class="text-[20px] font-bold">$ <span id="balance">45000</span></h3>
                     <p class="text-[#696868] text-[14px]">Available Balance</p>
                 </div>
             </div>
@@ -94,40 +94,99 @@
             <div>
                 <label for="">Select A Bank</label>
                 <br>
-                <select class="select rounded-3xl w-full  bg-[#F4F5F7] mt-2">
+                <select id="bank-name" class="select rounded-3xl w-full  bg-[#F4F5F7] mt-2">
                     <option disabled selected>Select Your Bank Name</option>
-                    <option>NRBC Bank</option>
-                    <option>Agrani Bank</option>
-                    <option>Islami Bank</option>
-                    <option>Brack Bank</option>
-                    <option>AL-ARFA BaNK</option>
+                     <!-- State-owned commercial banks -->
+                        <option>Sonali Bank Limited</option>
+                        <option>Janata Bank Limited</option>
+                        <option>Agrani Bank Limited</option>
+                        <option>Rupali Bank Limited</option>
+
+                        <!-- Specialized banks -->
+                        <option>Bangladesh Krishi Bank</option>
+                        <option>Rajshahi Krishi Unnayan Bank</option>
+                        <option>Probashi Kallyan Bank</option>
+                        <option>Ansar-VDP Unnayan Bank</option>
+                        <option>Grameen Bank</option>
+
+                        <!-- Private Commercial Banks (Conventional) -->
+                        <option>AB Bank Limited</option>
+                        <option>Bank Asia Limited</option>
+                        <option>BRAC Bank Limited</option>
+                        <option>City Bank Limited</option>
+                        <option>Dhaka Bank Limited</option>
+                        <option>Dutch-Bangla Bank Limited</option>
+                        <option>Eastern Bank Limited</option>
+                        <option>IFIC Bank Limited</option>
+                        <option>Jamuna Bank Limited</option>
+                        <option>Mercantile Bank Limited</option>
+                        <option>Midland Bank Limited</option>
+                        <option>Modhumoti Bank Limited</option>
+                        <option>Mutual Trust Bank Limited</option>
+                        <option>National Bank Limited</option>
+                        <option>NRB Bank Limited</option>
+                        <option>NRB Commercial Bank Limited</option>
+                        <option>NRB Global Bank Limited</option>
+                        <option>One Bank Limited</option>
+                        <option>Premier Bank Limited</option>
+                        <option>Prime Bank Limited</option>
+                        <option>Pubali Bank Limited</option>
+                        <option>Shimanto Bank Limited</option>
+                        <option>Southeast Bank Limited</option>
+                        <option>Standard Bank Limited</option>
+                        <option>Trust Bank Limited</option>
+                        <option>United Commercial Bank Limited</option>
+                        <option>Uttara Bank Limited</option>
+
+                        <!-- Private Commercial Banks (Islamic Shariah based) -->
+                        <option>Al-Arafah Islami Bank Limited</option>
+                        <option>EXIM Bank Limited</option>
+                        <option>First Security Islami Bank Limited</option>
+                        <option>ICB Islamic Bank Limited</option>
+                        <option>Islami Bank Bangladesh Limited</option>
+                        <option>Shahjalal Islami Bank Limited</option>
+                        <option>Social Islami Bank Limited</option>
+                        <option>Union Bank Limited</option>
+
+                        <!-- Foreign Commercial Banks -->
+                        <option>Citibank N.A.</option>
+                        <option>Commercial Bank of Ceylon Limited</option>
+                        <option>Habib Bank Limited</option>
+                        <option>HSBC (Hongkong and Shanghai Banking Corporation)</option>
+                        <option>National Bank of Pakistan</option>
+                        <option>Standard Chartered Bank</option>
+                        <option>State Bank of India</option>
+                        <option>Woori Bank</option>
                 </select>
             </div>
             <div>
                 <label for="">Bank Account Number</label>
                 <br>
-                <input type="text" placeholder="Enter 11 digit account number" class="input mt-2 rounded-3xl w-full  bg-[#F4F5F7]" />
+                <input id="account-no" type="text" placeholder="Enter 11 digit account number" class="input mt-2 rounded-3xl w-full  bg-[#F4F5F7]" />
             </div>
             <div>
-                <label for="">Amount to Add</label>
+                <label  for="">Amount to Add</label>
                 <br>
-                <input type="text" placeholder="Add Amount to withdraw" class="input mt-2 rounded-3xl w-full  bg-[#F4F5F7]" />
+                <input id="add-amount" type="text" placeholder="Add Amount to withdraw" class="input mt-2 rounded-3xl w-full  bg-[#F4F5F7]" />
             </div>
             <div>
                 <label for="">Pin Number</label>
                 <br>
-                <input type="text" placeholder="Enter 4 digit pin number" class="input mt-2 rounded-3xl w-full bg-[#F4F5F7]" />
+                <input id="add-pin" type="text" placeholder="Enter 4 digit pin number" class="input mt-2 rounded-3xl w-full bg-[#F4F5F7]" />
             </div>
 
-                <button id="btn-login" class="w-full rounded-3xl btn py-6 bg-[#0874F2] text-white flex items-center justify-center">
+                <button id="btn-addMoney" class="w-full rounded-3xl btn py-6 bg-[#0874F2] text-white flex items-center justify-center">
                 <span id="spinner" class="loading loading-spinner hidden mr-2"></span>
-                Login
+                Add Money
                 </button>
             
            </form>
         
     </div>
     
+
+
+    <script src="js/home.js"></script>
     
 </body>
 </html>
