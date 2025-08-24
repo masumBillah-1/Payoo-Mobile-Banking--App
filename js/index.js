@@ -29,18 +29,6 @@ document.getElementById('btn-login').addEventListener('click',function(e){
     }else{
         alert('Not Match')
     }
-
-
-
-
-
-
-
-
-
-
    
 })
-
-
 
